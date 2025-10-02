@@ -1,0 +1,424 @@
+{
+  "Categories":
+  {
+    "Warrior":
+    [
+      {
+        "name": "Fighter",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Weapon Proficiency", "Basic Combat Maneuvers", "Endurance"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Knight",
+        "requires": [{ "class": "Fighter", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Heavy Armor Training", "Shield Mastery", "Defensive Stance"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Berserker"]
+      },
+      {
+        "name": "Paladin",
+        "requires": [{ "class": "Knight", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 10,
+        "AddSkills": ["Holy Smite", "Divine Shield", "Lay on Hands"],
+        "AddsMagicSource": ["Holy"],
+        "incompatibleWith": ["Dark Knight", "Necromancer", "Warlock"]
+      },
+      {
+        "name": "Berserker",
+        "requires": [{ "class": "Fighter", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Rage", "Frenzied Attack", "Unstoppable Force"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Knight", "Paladin"]
+      },
+      {
+        "name": "Samurai",
+        "requires": [{ "class": "Fighter", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Katana Mastery", "Iaido Strike", "Bushido Spirit"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Dark Knight",
+        "requires": [{ "class": "Knight", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 10,
+        "AddSkills": ["Dark Blade", "Life Drain", "Cursed Aura"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Paladin"]
+      },
+      {
+        "name": "Gladiator",
+        "requires": [{ "class": "Fighter", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Arena Combat", "Weapon Mastery", "Adrenaline Rush"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Guardian",
+        "requires": [{ "class": "Knight", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 10,
+        "AddSkills": ["Fortified Defense", "Aegis Shield", "Protect Ally"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Berserker"]
+      },
+      {
+        "name": "Duelist",
+        "requires": [{ "class": "Fighter", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Precision Strike", "Riposte", "Agile Footwork"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      }
+    ],
+
+    "Mage":
+    [
+      {
+        "name": "Mage",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Basic Spellcasting", "Mana Control", "Elemental Bolt"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Archmage",
+        "requires": [{ "class": "Mage", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 10,
+        "AddSkills": ["Master of Elements", "Arcane Mastery", "Mana Surge"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Necromancer",
+        "requires": [{ "class": "Mage", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 10,
+        "AddSkills": ["Raise Undead", "Soul Harvest", "Bone Armor"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Paladin", "Priest", "Angel", "Healer", "Cleric"]
+      },
+      {
+        "name": "Warlock",
+        "requires": [{ "class": "Mage", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 10,
+        "AddSkills": ["Demonic Pact", "Curse of Agony", "Shadow Bolt"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Paladin", "Priest", "Angel", "Healer", "Cleric"]
+      },
+      {
+        "name": "Sorcerer",
+        "requires": [{ "class": "Mage", "points": 5 }],
+        "maxPoints": 10,
+        "minLVL": 10,
+        "AddSkills": ["Chaos Magic", "Wild Surge", "Spell Overload"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Elementalist",
+        "requires": [ { "class": "Mage", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Elemental Focus", "Flame Wave", "Chain Lightning"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Illusionist",
+        "requires": [ { "class": "Mage", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Invisibility", "Mirror Image", "Mind Veil"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Enchanter",
+        "requires": [ { "class": "Mage", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Weapon Enchant", "Warding Glyphs", "Charm Infusion"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Healer",
+        "requires": [ { "class": "Mage", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Restore", "Cleanse", "Protective Ward"],
+        "AddsMagicSource": ["Divine"],
+        "incompatibleWith": ["Warlock", "Necromancer"]
+      },
+      {
+        "name": "Battle Mage",
+        "requires":
+        [
+          { "class": "Mage", "points": 5 },
+          { "class": "Fighter", "points": 5 }
+        ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Arcane Armor", "Spellstrike", "Mana Shield"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Priest",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Basic Healing", "Bless", "Turn Undead"],
+        "AddsMagicSource": ["Divine"],
+        "incompatibleWith": ["Necromancer", "Warlock"]
+      },
+      {
+        "name": "Cleric",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Turn Undead", "Smite", "Protective Aura", "Basic Healing"],
+        "AddsMagicSource": ["Divine"],
+        "incompatibleWith": ["Necromancer", "Warlock"]
+      }
+    ],
+
+    "Archer":
+    [
+      {
+        "name": "Archer",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Bow Mastery", "Quick Shot", "Eagle Eye"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Sniper",
+        "requires": [ { "class": "Archer", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Long Shot", "Piercing Arrow", "Vital Point Targeting"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Ranger",
+        "requires": [ { "class": "Archer", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Dual Wield Bow Skills", "Trap Setting", "Camouflage"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Marksman",
+        "requires": [ { "class": "Archer", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Rapid Fire", "Pinpoint Accuracy", "Critical Volley"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Beastmaster",
+        "requires": [ { "class": "Ranger", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Animal Companion", "Pack Tactics", "Wild Instincts"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Scout",
+        "requires": [ { "class": "Archer", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Silent Step", "Recon Sweep", "Trap Disarm"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Crossbowman",
+        "requires": [ { "class": "Archer", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Crossbow Mastery", "Armor Piercing Bolt", "Quick Reload"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      }
+    ],
+
+    "Production":
+    [
+      {
+        "name": "Blacksmith",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Blacksmithing", "Weapon Crafting", "Armor Crafting"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Alchemist",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Alchemy", "Potion Making", "Material Transmutation"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Tailor",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Tailoring", "Cloth Crafting", "Leatherworking"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Cook",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Cooking", "Advanced Cooking", "Specialty Dishes"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Scribe",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Scribing", "Scroll Creation", "Magic Tome Crafting"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Merchant",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Trading", "Appraisal", "Bargaining"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Runecaster",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Rune Engraving", "Rune Weapon Crafting", "Rune Activation"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Brewer",
+        "requires": [ { "class": "Alchemist", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Brewing", "Potion Refinement", "Alcohol Crafting"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": []
+      }
+    ],
+
+    "Special":
+    [
+      {
+        "name": "Assassin",
+        "requires": [ { "class": "Fighter", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Stealth", "Backstab", "Poison Use"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Paladin"]
+      },
+      {
+        "name": "Ninja",
+        "requires": [ { "class": "Assassin", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 10,
+        "AddSkills": ["Shadow Step", "Shuriken Mastery", "Silent Kill"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Summoner",
+        "requires": [ { "class": "Mage", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Summon Beast", "Summon Undead", "Summon Elemental"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Tamer",
+        "requires": [ { "class": "Ranger", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Beast Taming", "Mount Training", "Companion Command"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Bard",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Performance", "Song of Courage", "Song of Soothing"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Monk",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Unarmed Combat", "Chi Focus", "Inner Strength"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Psion",
+        "requires": [ { "class": "Mage", "points": 5 } ],
+        "maxPoints": 10,
+        "minLVL": 5,
+        "AddSkills": ["Mind Blast", "Telekinesis", "Mental Shield"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Shaman",
+        "requires": [],
+        "maxPoints": 10,
+        "minLVL": 1,
+        "AddSkills": ["Spirit Channeling", "Totem Crafting", "Elemental Communion"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": []
+      }
+    ]
+  }
+}

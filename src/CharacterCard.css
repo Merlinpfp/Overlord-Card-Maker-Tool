@@ -1,0 +1,251 @@
+.slider
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 18px;
+    background: #ddd;
+    outline: none;
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Chrome/Edge/Safari */
+.slider::-webkit-slider-runnable-track
+{
+    height: 18px;
+    background: linear-gradient(to right, #8861a4 0%, #8861a4 var(--val, 50%), #ddd var(--val, 50%), #ddd 100%);
+}
+.slider::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #8861a4;
+    cursor: pointer;
+}
+
+/* Firefox */
+.slider::-moz-range-track
+{
+    height: 18px;
+    background: #ddd;
+}
+.slider::-moz-range-progress {
+    height: 18px;
+    background: #8861a4;
+}
+.slider::-moz-range-thumb
+{
+    width: 18px;
+    height: 18px;
+    border: 2px solid #8861a4;
+    background: #fff;
+    cursor: pointer;
+}
+.slider:hover
+{
+    opacity: 0.7;
+}
+
+.character-card
+{
+  width: 600px;
+  background: #c4c4c4;
+  color: black;
+  border: 2px solid #f5deb3;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 20px auto;
+  font-family: "Cinzel", serif;
+  position: relative;
+}
+
+.card-header
+{
+
+}
+
+.stars
+{
+  color: gold;
+  font-size: 28px;
+}
+
+.magic-source
+{
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.circle
+{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slice
+{
+  flex: 1 1 50%;
+}
+
+.slice.arcane { background: purple; }
+.slice.divine { background: yellow; }
+.slice.spiritual { background: green; }
+.slice.alternative { background: darkred; }
+
+.image-container
+{
+  display: flex;
+  flex: 1;
+}
+
+.image-container img
+{
+  width: 100%;
+  object-fit: fill;
+}
+
+.sense-of-justice
+{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.class-section
+{
+  margin-top: 20px;
+}
+
+.class-row
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills
+{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill
+{
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin: 2px;
+  text-align: center;
+}
+
+.progress-bar
+{
+  display: flex;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.bar
+{
+  height: 100%;
+}
+
+.bar.race { background: black; }
+.bar.job { background: green; }
+.bar.rest { background: blue; }
+
+.ability-chart
+{
+  margin-top: 20px;
+}
+
+.ability-row
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.cardContainer
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.CC-Left
+{
+  width: 250px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CC-Right
+{
+  flex:1;
+  padding-left: 4px;
+}
+.overlord-linear-scale
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Cinzel', serif;
+  color: black;
+  padding-left: 200px;
+}
+.scale-line
+{
+  flex: 1;
+  height: 1px;
+  background: black;
+  box-shadow: 0 0 1px black;
+}
+.innerContainer
+{
+  display: flex;
+}
+.left-Header
+{
+
+}
+.right-Header
+{
+  align-self: anchor-center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex: 1;
+}
+.MergerCC
+{
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.abilityLeft
+{
+  width: 200px;
+}
+.abilityRight
+{
+  width: 100%;
+}
+.barValue
+{
+   background: #8861a4;
+   height: 100%;
+}

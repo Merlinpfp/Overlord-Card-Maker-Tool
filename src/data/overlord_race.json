@@ -1,0 +1,867 @@
+{
+  "Undead":
+  {
+      "classes":
+      [
+        {
+          "name": "Skeleton Mage",
+          "requires": [],
+          "maxPoints": 15,
+          "ClassRarity": "Base",
+          "AddsMagicSource": ["Arcane"],
+          "incompatibleWith": ["Divine"],
+          "AddSkills": ["Magic Arrow", "Silence"],
+          "AddsMagicSource": [],
+          "incompatibleWith": ["Divine"]
+        },
+        {
+          "name": "Skeleton Archer",
+          "requires": [],
+          "maxPoints": 15,
+          "ClassRarity": "Base",
+          "AddSkills": ["Bone Slash", "Endurance"],
+          "AddsMagicSource": [],
+          "incompatibleWith": ["Divine"]
+        },
+        {
+          "name": "Skeleton Rider",
+          "requires": [],
+          "maxPoints": 15,
+          "ClassRarity": "Base",
+          "AddSkills": ["Bone Slash", "Endurance"],
+          "AddsMagicSource": [],
+          "incompatibleWith": ["Divine"]
+        },
+        {
+          "name": "Skeleton Warrior",
+          "requires": [],
+          "maxPoints": 15,
+          "ClassRarity": "Base",
+          "AddSkills": ["Bone Slash", "Endurance"],
+          "AddsMagicSource": [],
+          "incompatibleWith": ["Divine"]
+        },
+        {
+          "name": "Zombie",
+          "requires": [],
+          "maxPoints": 15,
+          "ClassRarity": "Base",
+          "AddSkills": ["Rotting Bite", "Slow Regeneration"],
+          "AddsMagicSource": [],
+          "incompatibleWith": ["Divine"]
+        },
+        {
+          "name": "Death Knight",
+          "requires": [],
+          "maxPoints": 15,
+          "ClassRarity": "High",
+          "AddSkills": ["Unholy Strike","Bone Shield","Aura of Terror"],
+          "AddsMagicSource": ["Arcane"],
+          "incompatibleWith": ["Angel","Paladin","Cleric"]
+        },
+        {
+          "name": "Lesser Vampire",
+          "requires": [],
+          "maxPoints": 15,
+          "ClassRarity": "Base",
+          "AddSkills": ["Blood Drain", "Night Vision"],
+          "AddsMagicSource": [],
+          "incompatibleWith": ["Divine"]
+        },
+        {
+          "name": "Vampire",
+          "requires": [{ "class": "Lesser Vampire", "points": 10 }],
+          "maxPoints": 10,
+          "ClassRarity":"High",
+          "AddSkills": ["Bat Swarm", "Charm"],
+          "AddsMagicSource": ["Arcane"],
+          "incompatibleWith": ["Divine"]
+        },
+        {
+          "name": "True Vampire",
+          "requires": [{"class": "Vampire","points": 10}],
+          "maxPoints": 10,
+          "ClassRarity": "High",
+          "AddSkills": [],
+          "AddsMagicSource": ["Arcane"],
+          "incompatibleWith": ["Divine"]
+        },
+        {
+          "name": "Wraith",
+          "requires": [],
+          "maxPoints": 15,
+          "ClassRarity": "Base",
+          "AddSkills": ["Incorporeal Movement","Life Drain","Terror Howl"],
+          "AddsMagicSource": ["Arcane","Spiritual"],
+          "incompatibleWith": ["Divine","Angel","Priest"]
+        },
+        {
+          "name": "Dullahan",
+          "requires": [],
+          "maxPoints": 15,
+          "ClassRarity": "Base",
+          "AddSkills": ["Headless Charge","Spectral Steed","Fear Aura"],
+          "AddsMagicSource": ["Spiritual"],
+          "incompatibleWith": ["Angel","Priest","Paladin"]
+        },
+        {
+          "name": "Elder Lich",
+          "requires": [{"class": "Skeleton Mage","points": 10}],
+          "maxPoints": 10,
+          "ClassRarity": "High",
+          "AddSkills": ["Death Bolt", "Necrotic Aura"],
+          "AddsMagicSource": ["Arcane", "Alternative"],
+          "incompatibleWith": ["Divine"]
+        },
+        {
+          "name": "Night Lich",
+          "requires": [{"class": "Skeleton Mage","points": 10}],
+          "maxPoints": 10,
+          "ClassRarity": "High",
+          "AddSkills": ["Advanced Necromancy","Dark Aura","Negative Energy Burst"],
+          "AddsMagicSource": ["Arcane"],
+          "incompatibleWith": ["Divine","Angel","Paladin"]
+        },
+        {
+          "name": "Overlord",
+          "requires": [{"class": "Elder Lich","points": 10}],
+          "maxPoints": 5,
+          "ClassRarity": "Rare",
+          "AddSkills": ["Mass Raise Dead", "Reality Slash"],
+          "AddsMagicSource": ["Arcane", "Alternative"],
+          "incompatibleWith": ["Divine"]
+        }
+      ],
+      "incompatibleWith": ["Human","Elf","Dwarf","Orc","Goblin","Lizardman","Insectoid","Angel"]
+  },
+
+
+  "Slime":
+  {
+    "classes":
+    [
+      {
+        "name": "Predator Slime",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Absorb", "Shape Shift"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Human", "Angel", "Demon"]
+      },
+      {
+        "name": "Hell Slime",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Corrosive Touch","Heat Absorption","Flame Burst"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Divine","Angel","Ice Elementals"]
+      },
+      {
+        "name": "Sapphire Slime",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Magic Absorption", "Water Jet"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Human", "Angel", "Demon"]
+      },
+      {
+        "name": "Shoggoth",
+        "requires": [],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Eldritch Regeneration","Tentacle Strike","Abyssal Resilience"],
+        "AddsMagicSource": ["Arcane","Alternative"],
+        "incompatibleWith": ["Divine","Angel","Holy Knights"]
+      },
+      {
+        "name": "Ubbo-Sathla",
+        "requires": [{ "class": "Shoggoth", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Primordial Ooze","Reality Distortion","Consume Matter"],
+        "AddsMagicSource": ["Arcane","Spiritual"],
+        "incompatibleWith": ["Divine","Angel","Paladin"]
+      },
+      {
+        "name": "Elder Black Ooze",
+        "requires": [{ "class": "Ubbo-Sathla", "points": 10 }],
+        "maxPoints": 5,
+        "ClassRarity": "Rare",
+        "AddSkills": ["Absolute Corrosion","Void Assimilation","Elder Spawn"],
+        "AddsMagicSource": ["Arcane","Alternative","Spiritual"],
+        "incompatibleWith": ["Divine","Angel","Paladin","High Elf"]
+      }
+    ],
+    "evolvesTo": ["Shoggoth","Ubbo‑Sathla"],
+    "incompatibleWith": ["Human","Angel","Demon"]
+  },
+
+
+  "Demon":
+  {
+    "classes":
+    [
+      {
+        "name": "Imp",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Dark Claw", "Minor Curse"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Angel"]
+      },
+      {
+        "name": "Succubus",
+        "requires": [{"class": "Imp","points": 10}],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Seduction", "Drain Life"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Angel"]
+      },
+      {
+        "name": "Arch Devil",
+        "requires": [{"class": "Succubus","points": 10}],
+        "maxPoints": 5,
+        "ClassRarity": "Rare",
+        "AddSkills": ["Hellfire", "Command Lesser Demon"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Angel"]
+      }
+    ],
+    "evolvesTo": ["Succubus","Arch Devil"],
+    "incompatibleWith": ["Angel","Human"]
+  },
+
+
+  "Angel":
+  {
+    "classes":
+    [
+      {
+        "name": "Angel",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Light Beam", "Bless"],
+        "AddsMagicSource": ["Divine"],
+        "incompatibleWith": ["Demon"]
+      },
+      {
+        "name": "Archangel",
+        "requires": [{"class": "Angel","points": 10}],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Mass Heal", "Holy Nova"],
+        "AddsMagicSource": ["Divine"],
+        "incompatibleWith": ["Demon", "Undead"]
+      }
+    ],
+    "evolvesTo": ["Archangel"],
+    "incompatibleWith": ["Demon","Undead"]
+  },
+
+
+  "Arachnoid":
+  {
+    "classes":
+    [
+      {
+        "name": "Arachnoid",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Web Creation","Venomous Fang","Wall Crawling"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Angel","Elf","Dwarf"]
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith": ["Human","Angel"]
+  },
+
+
+  "Insect":
+  {
+    "classes":
+    [
+      {
+        "name": "Insect Fighter",
+        "requires": [],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Chitin Armor","Multi-Limb Attack","Poison Bite"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Angel","Undead","Human"]
+      },
+      {
+        "name": "Vermin Lord",
+        "requires": [{ "class": "Insect Fighter", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Swarm Control","Burrow","Disease Cloud"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": ["Angel","Undead","Paladin","Holy Knight"]
+      },
+      {
+        "name": "Zern",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Adaptive Evolution","Chitin Regeneration","Hive Mind"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Angel","Demon","Elf"]
+      },
+      {
+        "name": "Zern Lord",
+        "requires": [{ "class": "Zern", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Mutagenic Surge","Hive Expansion","Biological Mastery"],
+        "AddsMagicSource": ["Arcane","Alternative"],
+        "incompatibleWith": ["Angel","Demon","Elf","Paladin"]
+      }
+    ],
+    "evolvesTo": ["Vermin Lord","Zern Lord"],
+    "incompatibleWith": ["Human","Angel"]
+  },
+
+
+  "Dragonoid":
+  {
+    "classes":
+    [
+      {
+        "name": "Dragonoid",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Draconic Scales","Winged Flight","Fire Breath"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Angel","Undead","Automaton"]
+      },
+      {
+        "name": "True Vampire Dragon",
+        "requires": [{ "class": "Dragonoid", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Blood-Linked Flame","Draconic Domination","Vampiric Frenzy"],
+        "AddsMagicSource": ["Arcane","Alternative"],
+        "incompatibleWith": ["Angel","Paladin","Holy Knight"]
+      }
+    ],
+    "evolvesTo": ["True Vampire Dragon"],
+    "incompatibleWith": ["Human","Angel"]
+  },
+
+
+  "Automaton":
+  {
+    "classes":
+    [
+      {
+        "name": "Automaton",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Mechanical Body","Integrated Weaponry","Energy Core Shield"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": ["Biological","Undead","Angel"]
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith": ["Biological","Human"]
+  },
+
+
+  "Doppelgänger":
+  {
+    "classes":
+    [
+      {
+        "name": "Doppelgänger",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Mimic Appearance","Stealth Movement","Substitute Body"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Automaton","Angel"]
+      },
+      {
+        "name": "Greater Doppelgänger",
+        "requires": [{ "class": "Doppelgänger", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Perfect Imitation","Memory Absorption","Identity Erasure"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Automaton","Angel","Paladin"]
+      }
+    ],
+    "evolvesTo": ["Greater Doppelgänger"],
+    "incompatibleWith":["Human"]
+  },
+
+
+  "Homunculus":
+  {
+    "classes":
+    [
+      {
+        "name": "Homunculus",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Alchemical Body","Rapid Regeneration","Synthetic Vitality"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": ["Undead","Automaton"]
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith":["Human","Angel"]
+  },
+
+
+  "Goblin":
+  {
+    "incompatibleWith":["Angel","Demon","Undead"],
+    "classes":
+    [
+      {
+        "name": "Scout",
+        "requires": [],
+        "maxPoints": 10,
+        "ClassRarity": "Base",
+        "incompatibleWithRaces": []
+      },
+      {
+        "name": "Goblin Warrior",
+        "requires": [{"class": "Scout","points": 5}],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Quick Slash", "Pack Tactics"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Goblin King",
+        "requires": [{"class": "Goblin Warrior","points": 5}],
+        "maxPoints": 5,
+        "ClassRarity": "High",
+        "incompatibleWithRaces": []
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith": ["Undead", "Angel"]
+  },
+
+
+  "Troll":
+  {
+    "classes":
+    [
+      {
+        "name": "Troll",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Regeneration","Savage Bite","Thick Hide"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Angel","Elf"]
+      },
+      {
+        "name": "War Troll",
+        "requires": [{ "class": "Troll", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Berserk Rage","Battle Roar","Iron Skin"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Angel","Elf","Cleric"]
+      }
+    ],
+    "evolvesTo": ["War Troll"],
+    "incompatibleWith": ["Human","Angel"]
+  },
+
+
+  "Minotaur":
+  {
+    "classes":
+    [
+      {
+        "name": "Minotaur",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Bull Charge","Labyrinth Sense","Savage Strength"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": ["Angel","Demon"]
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith": ["Human"]
+  },
+
+
+  "Quagoa":
+  {
+    "classes":
+    [
+      {
+        "name": "Quagoa",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Stone Hide","Tunnel Vision","Pack Instinct"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Angel","Elf"]
+      },
+      {
+        "name": "Quagoa Lord",
+        "requires": [{ "class": "Quagoa", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Stone Aura","Command Pack","Earth Shatter"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Angel","Elf","Paladin"]
+      }
+    ],
+    "evolvesTo": ["Quagoa Lord"],
+    "incompatibleWith": ["Human","Angel"]
+  },
+
+
+  "Rabbitman":
+  {
+    "classes":
+    [
+      {
+        "name": "Rabbitman",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Quick Step","Burrow Escape","Keen Hearing"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Undead","Automaton"]
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith": ["Undead","Angel"]
+  },
+
+
+  "Snakeman":
+  {
+    "classes":
+    [
+      {
+        "name": "Snakeman",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Constrict","Poison Fang","Serpentine Agility"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": ["Angel","Human"]
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith": ["Human","Angel"]
+  },
+
+
+  "Toadman":
+  {
+    "classes":
+    [
+      {
+        "name": "Toadman",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Swamp Camouflage","Sticky Tongue","Amphibious Movement"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Angel","Automaton"]
+      },
+      {
+        "name": "Tribal Leader",
+        "requires": [{ "class": "Toadman", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Tribal Command","War Chant","Swamp Fortification"],
+        "AddsMagicSource": ["Alternative","Spiritual"],
+        "incompatibleWith": ["Angel","Undead"]
+      }
+    ],
+    "evolvesTo": ["Tribal Leader"],
+    "incompatibleWith": ["Human","Angel"]
+  },
+
+
+  "Golem":
+  {
+    "classes":
+    [
+      {
+        "name": "Half-Golem",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Stone Fist","Iron Skin","Core Stabilization"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Undead","Angel"]
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith": ["Undead"]
+  },
+
+
+  "Death Vine":
+  {
+    "classes":
+    [
+      {
+        "name": "Death Vine",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Entangle","Life Drain","Poison Spores"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": ["Human","Angel"]
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith": ["Human"]
+  },
+
+
+  "Dryad":
+  {
+    "classes":
+    [
+      {
+        "name": "Dryad",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Forest Bond","Nature's Whisper","Healing Dew"],
+        "AddsMagicSource": ["Spiritual","Divine"],
+        "incompatibleWith": ["Undead","Demon"]
+      }
+    ],
+    "evolvesTo": [],
+    "incompatibleWith":["Undead","Demon"]
+  },
+
+
+  "Elf":
+  {
+    "incompatibleWith":["Orc","Demon","Undead"],
+    "classes":
+    [
+      {
+        "name": "Elf Ranger",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Bow Mastery","Keen Senses","Forest Step"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": ["Undead","Demon"]
+      },
+      {
+        "name": "Elf Druid",
+        "requires": [{ "class": "Elf Ranger", "points": 5 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Nature’s Touch","Wildshape","Summon Treant"],
+        "AddsMagicSource": ["Divine","Spiritual"],
+        "incompatibleWith": ["Undead","Automaton"]
+      }
+    ]
+  },
+
+
+  "Dwarf":
+  {
+    "incompatibleWith": ["Demon","Undead"],
+    "classes":
+    [
+      {
+        "name": "Dwarf Warrior",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Battle Endurance","Shield Mastery","Stone Skin"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Angel","Undead"]
+      },
+      {
+        "name": "Dwarf Runesmith",
+        "requires": [{ "class": "Dwarf Warrior", "points": 5 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Rune Crafting","Weapon Imbuement","Magic Resistance"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Demon","Undead"]
+      }
+    ]
+  },
+
+
+  "Orc":
+  {
+    "incompatibleWith": ["Elf","Angel","Demon","Undead"],
+    "classes":
+    [
+      {
+        "name": "Orc Berserker",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Rage","Savage Strike","Pain Resistance"],
+        "AddsMagicSource": [],
+        "incompatibleWith": ["Angel","Elf"]
+      },
+      {
+        "name": "Orc War Chief",
+        "requires": [{ "class": "Orc Berserker", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Command Shout","Tactical Fury","Blood Rally"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": ["Angel","Elf"]
+      }
+    ]
+  },
+
+
+  "Lizardman":
+  {
+    "incompatibleWith": ["Angel","Demon","Undead"],
+    "classes":
+    [
+      {
+        "name": "Lizardman Spearman",
+        "requires": [],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Amphibious Combat","Piercing Strike","Scaled Defense"],
+        "AddsMagicSource": ["Alternative"],
+        "incompatibleWith": ["Undead","Automaton"]
+      },
+      {
+        "name": "Swamp Stalker",
+        "requires": [{ "class": "Lizardman Spearman", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Silent Approach","Poisoned Weapon","Ambush Mastery"],
+        "AddsMagicSource": ["Alternative","Spiritual"],
+        "incompatibleWith": ["Undead","Automaton"]
+      }
+    ]
+  },
+
+
+  "Human":
+  {
+    "incompatibleWith":["Angel","Demon","Undead"],
+    "classes":
+    [
+      {
+        "name": "Human",
+        "requires": [],
+        "maxPoints": 10,
+        "ClassRarity": "Base",
+        "AddSkills": ["Sword Mastery", "Shield Block"],
+        "incompatibleWithRaces": []
+      },
+      {
+        "name": "Warrior",
+        "requires": [{"class": "Human","points": 5}],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Sword Mastery", "Shield Block"],
+        "AddsMagicSource": [],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Mage",
+        "requires": [{"class": "Human","points": 5}],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Basic Arcane Bolt", "Mana Control"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Hero",
+        "requires":[{"class": "Human","points": 10}],
+        "maxPoints": 5,
+        "ClassRarity": "High",
+        "incompatibleWithRaces": ["Demon"]
+      },
+      {
+        "name": "Priest",
+        "requires":[{"class": "Human","points": 5}],
+        "maxPoints": 5,
+        "ClassRarity": "High",
+        "AddSkills": ["Heal Minor Wounds", "Turn Undead"],
+        "AddsMagicSource": ["Divine"],
+        "incompatibleWithRaces":["Undead", "Demon"]
+      },
+      {
+        "name": "Paladin",
+        "requires":
+        [
+          { "class": "Warrior", "points": 10 },
+          { "class": "Priest", "points": 10 }
+        ],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Holy Smite", "Divine Protection"],
+        "AddsMagicSource": ["Divine"],
+        "incompatibleWith": ["Undead", "Demon"]
+      },
+      {
+        "name": "Archmage",
+        "requires": [{ "class": "Mage", "points": 10 }],
+        "maxPoints": 10,
+        "ClassRarity": "High",
+        "AddSkills": ["Fireball", "Teleport", "Greater Arcane Bolt"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": []
+      },
+      {
+        "name": "Druid",
+        "requires": [{"class": "Human","points": 5}],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Healing Touch","Animal Companion","Nature’s Wrath"],
+        "AddsMagicSource": ["Divine","Spiritual"],
+        "incompatibleWith": ["Undead","Demon","Automaton"]
+      },
+      {
+        "name": "Bard",
+        "requires": [{"class": "Human","points": 5}],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Inspiring Song","Distracting Tune","Magical Performance"],
+        "AddsMagicSource": ["Arcane"],
+        "incompatibleWith": ["Undead"]
+      },
+      {
+        "name": "Ranger",
+        "requires": [{"class": "Human","points": 5}],
+        "maxPoints": 15,
+        "ClassRarity": "Base",
+        "AddSkills": ["Tracking","Bow Mastery","Stealth"],
+        "AddsMagicSource": ["Spiritual"],
+        "incompatibleWith": ["Undead","Demon"]
+      }
+    ]
+  }
+
+
+}
