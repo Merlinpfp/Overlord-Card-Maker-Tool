@@ -702,7 +702,7 @@ function App()
 
       <footer className="footline">
         <div className="above-footer"></div>
-        <a href="/legal.html" target="_blank" rel="noopener noreferrer">Legal Notice</a>
+        <a href="/Legal.html" target="_blank" rel="noopener noreferrer">Legal Notice</a>
       </footer>
     </div>
   );
